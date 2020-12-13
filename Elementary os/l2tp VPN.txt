@@ -1,0 +1,9 @@
+dependencies :
+sudo apt install git intltool libtool network-manager-dev libnm-util-dev libnm-glib-dev libnm-glib-vpn-dev libnm-gtk-dev libnm-dev libnma-dev ppp-dev libdbus-glib-1-dev libsecret-1-dev libgtk-3-dev libglib2.0-dev xl2tpd strongswan libnss3-dev
+
+then the l2tp vpn manager:
+sudo apt-add-repository ppa:nm-l2tp/network-manager-l2tp
+sudo apt update
+sudo apt install xl2tpd network-manager-l2tp network-manager-l2tp-gnome
+
+i realised that my elementary os somehow not shipped with xl2tpd
