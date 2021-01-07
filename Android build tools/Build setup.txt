@@ -7,3 +7,12 @@ curl flex g++-multilib gcc-multilib gnupg gperf imagemagick lib32ncurses-dev \
 lib32readline-dev lib32z1-dev  liblz4-tool libncurses5-dev libsdl1.2-dev \
 libxml2 libxml2-utils lzop pngcrush rsync schedtool squashfs-tools xsltproc yasm zlib1g-dev libtinfo5
 sudo apt update && sudo apt full-upgrade -y 
+
+curl https://storage.googleapis.com/git-repo-downloads/repo > repo
+sudo chmod a+rwx repo/
+sudo install repo /usr/local/bin
+rm -r repo
+
+repo init <manifest git>
+
+repo sync --current-branch --force-sync --no-clone-bundle --no-tags --optimized-fetch --prune -j `nproc`
