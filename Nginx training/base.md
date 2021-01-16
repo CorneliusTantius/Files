@@ -1,20 +1,20 @@
-# using vim
-vim <filename>
+### using vim
+vim 'filename'
 I to insert
 ESC to quit
-:w to write
-:wq to quit and write
-:qa! to forcequit without savings
+```:w``` to write
+```:wq``` to quit and write
+```:qa!``` to forcequit without savings
 
-cat <filename>
+cat 'filename'
 to peek whats inside the file
 
 
-dir 
+dirs:
 /etc/nginx/sites-enabled
 /var/www/dir...
 
-# default nginx script (static html) can also be found by typing "cat /etc/nginx/sites-enabled/default"
+### default nginx script (static html) can also be found by typing "cat /etc/nginx/sites-enabled/default"
 ```
 server {
        listen 80;
