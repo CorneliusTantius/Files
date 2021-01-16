@@ -11,8 +11,8 @@ to peek whats inside the file
 
 
 dirs:
-/etc/nginx/sites-enabled
-/var/www/dir...
+nginx script -> /etc/nginx/sites-enabled
+site files -> /var/www/dir...
 
 ### default nginx script (static html) can also be found by typing "cat /etc/nginx/sites-enabled/default"
 ```
